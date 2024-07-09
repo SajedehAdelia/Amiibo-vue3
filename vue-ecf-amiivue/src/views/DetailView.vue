@@ -7,6 +7,6 @@ const props = defineProps('amiibo')
 
 <template>
   <main>
-    <Detail :amiibo="amiibo"/>
+    <Detail />
   </main>
 </template>

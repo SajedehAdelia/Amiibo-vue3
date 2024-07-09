@@ -37,7 +37,7 @@ const loadMoreAmiibos = () => {
               <tr v-for="(amiibo, index) in amiiboStore.allAmiibos.slice(0, currentPage * pageSize)" :key="index">
                 <td>{{ amiibo.character }}</td>
                 <td>{{ amiibo.gameSeries }}</td>
-                <td><router-link :to="`/detail/${index}`">see</router-link></td>
+                <td><router-link :to="`/detail/${amiibo.tail}`">see</router-link></td>
               </tr>
             </tbody>
           </table>
